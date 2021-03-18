@@ -1,0 +1,19 @@
+HTML Artıları ve Eksileri
+
+HTML Artıları
+
+Tüm internet tarayıcılarında doğal (native) olarak çalışabilme,
+Kolay öğrenebilme,
+Açık kaynak koduna sahip olma,
+Tamamen ücretsiz olma,
+Çok sayıda kaynağa sahip olan devasa bir dil seçeneği sunma,
+World Wide Web Consortium (W3C) gibi resmî web standartları tarafından denetlenebilme,
+İstikrarlı ve düzgün biçimleme sunma,
+Node.js ve PHP gibi backend dilleri ile uyum içinde çalışabilme.
+
+HTML Eksileri
+
+Bazı tarayıcılar HTML kod sistemine eklenen yeni özellikleri tanımakta yavaş kalabilir.
+HTML, kullanıcıya mantık ekleyebilme imkânı vermez. Bu nedenle aynı ögelere (footer ve başlıklar gibi) sahip olunsa dahi fark etmeksizin tüm web siteleri ayrı ayrı oluşturulur.
+Sıklıkla statik durumdaki web sayfaları için kullanıldığından, dinamik işlemleri gerçekleştirmek için PHP, CSS ya da JavaScript gibi ayrı bir backend dili kullanılması gerekir.
+

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anasayfa</title>
+</head>
+<body>
+
+    <h1>Merhaba HTML!</h1>
+
+    <a href="www.google.com"></a><br><br>
+
+    <a href="www.google.com">Google'a Git</a><br><br>
+
+    <a href="www.google.com" target="_blank">Google'a Git</a><br><br>
+
+    <a href="mailto:mbilginer@brainytech.net" target="_blank">Mail Gönder</a><br><br>
+
+    <a href="industryolog.com/test.rar" target="_blank">Dosya İndir</a><br><br>
+
+    <a href="#burası">O Satıra Git</a><br><br>
+
+    <p id="burası"> Bu Satıra Gelmesini İstiyorum.</p><br><br>
+    
+</body>
+</html>
+
+<!--
+
+    Şu ana kadar HTML'i bir metin dokümanı gibi kullandık. 
+    Ancak biz bir Html sayfasındayken başka bir sayfaya kullanıcılarımızı yönlendirmek göndermek isteyebiliriz.
+    İşte burada devreye link verme olayı giriyor.
+
+    1. link a etiketinin href parametresi ile verilir.
+
+    Örneğin şimdi sayfa içinde Google'a bir link verelim.
+
+    <a href="www.google.com"></a>
+
+    2. Bunu etiket arasına herhangi bir ifade yazmassak ekranda hiçbir şey göremeyiz.
+
+    Link hangi metne uygulansın istiyorsak bunu a etiketleri arasına yazmak gerekir.
+
+    <a href="www.google.com">Google'a Git</a>
+
+    3. Bu haliyle tıkladığımızda yeni sayfayı var olan sayfa üzerinde açtığını görürüz.
+
+    Ancak biz çoğu zaman yeni sayfa yeni bir sekmede açılsın isteriz. Bunun için a etiketinin target attribute'u kullanılır.
+
+
+    Target="_blank" Yeni bir tarayıcı pencerisinde sayfa açar
+    Target="_self" Mevcut pencerede sayfa açar.
+    _self Değeri varsayılı olarak gelir. Belirtmemiz gerek duyulmaz.
+   _blank Metin bağlantısına her bir tıklama ile yeni bir web tarayıcı pencerisi açılır.
+
+   <a href="www.google.com" target="_blank">Google'a Git</a>
+
+   Attribute değeri default olarak _selfdir.
+
+   4. Vereceğiniz link bir eposta uygulamasına gitsin istiyorsanız yani bir mail link verecekseniz. Linkleme kısmı aşağıdaki gibi kullanılır.
+
+   <a href="mailto:mbilginer@brainytech.net" target="_blank">Mail Gönder</a>
+
+   5. Bir sunucu altındaki dosyanın adresi doğrudan verilirse bu indirme işlemi olarak algılanır ve kişinin bilgisayarına dosya inmeye başlar.
+
+   Örneğin industryolog.com/test.rar  bu adreste böyle bir dosyam var ve indirilmeye sunmak istiyorum.
+
+   6. Bir sayfada uzunca bir metin yazdığımızı varsayalım. 10'larca başlık var. 1.cisi sayfa içinde istediğiniz konu başlıklarına kullanıcıyı istediğiniz yerlerden yönlendirmek isteyebilirsiniz. İşte bunun için bize sunulmuş bir özellik var.
+
+   Html dokümanı içersinde gidilecek etiketin id özelliğine bir isim veriyoruz.
+
+   Ve link vermek istediğimiz a etiketinin href özelliğine artık bir adres değil bu id ismini veriyoruz. Ama başına # işareti koyuyoruz.
+
+    <a href="#burası">O Satıra Git</a>
+
+    <p id="burası"> Bu Satıra Gelmesini İstiyorum.</p>
+
+    Bu örneği daha iyi anlamak için Examples dosyasında site içi link verme örneğine göz atınız.
+
+-->

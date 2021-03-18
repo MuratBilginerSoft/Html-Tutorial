@@ -1,0 +1,11 @@
+Bir HTML Belgesinde yazılan kodları bölgelere ayırmak için region endregion kullanılabilir.
+
+
+<!-- #region Tanımlama -->
+
+Kodlar
+
+<!-- #endregion -->
+
+Bu alan açılabilir kapatılabilirdir. Böylelikle daha anlaşılabilir ve okunaklı kodlar yazmamıza yardımcı olur.
+

@@ -1,0 +1,7 @@
+HTML5 Nedir?
+
+HTML5’in en popüler özelliklerinden biri gömülü haldeki ses ve videolara verdiği dahilî destektir. Yıllardan beri kullanılan flash oynatıcı kullanmaya gerek kalmadan, gömülü ses ve video dosyaları web sitesine <audio> </audio> ve <video> </video> kodları eklenerek kullanılabilir. Benzer şekilde SVG (scale vector graphics) ve matematiksel formüller için de MathML desteği sunar.
+
+HTML5’i diğerlerinden ayıran bir başka özellik de çeşitli anlamsal düzeltmelere sahip olmasıdır. Yani, web sayfasındaki içeriğin anlamı konusunda hem tarayıcıları hem de arama motorlarına bilgilendirerek web sitesinin indekslenmesine yardımcı olur. En çok kullanılan anlamsal kodlar <article> </article, <header> </header>, <aside> </aside> ve <footer> </footer> etiketleridir.
+
+

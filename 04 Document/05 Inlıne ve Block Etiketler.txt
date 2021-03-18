@@ -1,0 +1,68 @@
+Her HTML öğresinin aslında ait olduğu bir içerik alanı yani blok vardır.
+
+Öncelikler HTML’de elemanları bu bölümde ikiye ayırırız; “satır içi elemanlar” ve “blok seviyesinde olan elemanlar”.
+
+Satır içi elemanları tanıyalım:
+
+<span>
+<a>
+<Img>
+
+Blok seviyesinde olan elemanları tanıyalım:
+
+div
+h1
+p
+Span Nedir?
+
+Span tıpkı id gibi class gibi div gibi bir içeriğe özellik atayabilmek için kullandığımız bir etikettir.
+Div etiketinden tek farkı span bir satır içi elemanıdır. İçerisine yazılan her şey satır içi elemanı olarak algılanır ve sadece içerisindeki içerik kadar yer kaplar.
+
+Div Nedir?
+
+Div tıpkı span elemanı gibi yine içerindeki eleman ve içeriklere özellik atamak için ve sınıflandırmak için kullanılan bir etikettir.
+Web tasarımlarda ve şuanda da kullandığımız sitede olduğu gibi bütün HTML öğreleri bir span veya div içerisinde olmak zorundadır.
+Aksi taktirde içeriğimize stil veremeyiz ve sayfamız ilk iskelet halinde görüntülenir. Bu da kullanıcılar için hiç hoş görünmez.
+
+Şimdi bu div tam olarak neymiş ve nasıl kullanılırmış bir göz atalım.
+
+Div etiketinde en çok kullanacağımız etiket “style” etiketidir.
+
+Div etiketinin aslında bu kadar çok kullanılmasındaki ana sebeplerden birisi de CSS stiller ile istenilen biçime sokulabilmesidir.
+
+Şimdi hemen nasıl kullanıldığına dair bir örnek verelim:
+
+html style tag
+html style tag
+
+Style etiketi ve içerisindeki kodların ne olduğunu ve nasıl kullanıldığını zaten önceki derslerimizden biliyorsunuz.
+
+Gördüğünüz gibi div alabildiği en büyük genişlik yani enini aldı.
+Div kullanımında bu özellik varsayılan olarak gelir siz özel bir CSS kodu ile bu genişliği düşürmediğiniz sürece div en büyük genişliği alır ve sağında veya solunda da kimsenin olmasına izin vermez.
+eğer divin genişliğini düşürüp sağa veya sola bir div daha veya metin veya harhangi bir şey eklemek isterseniz bunu CSS kodları ile yapmak zorundasınız. Zaten ileriki dersler de bunu defalarca kez yapıcaz merak etmeyin.
+
+Şimdi bashsettiğimiz divin genişliğini nasıl düşürebiliriz ona bir göz atalım:
+
+Tabi ki Width elemanı ile.
+Web tasarımlarınız da en çok kullanacağınız elemanların en başında geldiğini söyleyebilirim.
+Örnek verelim:
+
+html style tag
+html style tag
+
+Kodlarınızın arasına width elemanı ekledikten sonra sayfanızı çalıştırırsanız div’in genişliğinin düştüğünü görebilirsiniz.
+Birde height elemanımız var hemen kısaca ondan da bahsedelim:
+
+height elemanı width elemanı ile beraber kullanılır genellikle çünkü birbirlerini tamamlamaya yönelik elemanlardır.
+
+Nasıl ki width elemanı div’in genişliğini belirliyorsa,height elemanı da div’in yüksekliğini belirler.
+Örnek kodlarda da gördüğünüz gibi height elemanına 150 px değer vermişiz ve div 150 px yüksekliğinde oldu.
+
+Şimdi son bir örnek daha verip div etiketini bitirmek istiyorum.
+
+html style tag
+html style tag
+
+Bu dersimizde blok ve imline elemanlarını,span elemanını,div elemanını ve nasıl kullanıldığını with ve height elemanlarını,div’e stil vermeyi ve div içerisinde div oluşturmayı öğrendik.
+Bu konular web tasarımın yapı taşlarıdır.
+Bu etiketlerin kullanımını kavradığınız zaman her şey çok kolay ve güzel gelecek.

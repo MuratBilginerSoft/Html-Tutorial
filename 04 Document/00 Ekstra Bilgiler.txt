@@ -1,0 +1,12 @@
+1. Bir html belgesi içinde etiketler arasına yazdığınız metinlerde metinler arasına ne kadar boşluk koyarsanız koyun.
+
+Tarayıcı bunu tek bir boşluk varmış gibi algılar.
+
+2. Bunların dışında HTML hakkında bilinmesi gerekenler şunlardır:
+
+HTML bir programlama dili değil, bir işaretleme dilidir.
+HTML dosya uzantılarının .html ya da .htm şeklinde yazılması gereklidir.
+HTML kodlarının yazımı için Notepad, Notepad++ ya da Sublime Text gibi editörler kullanılabilir.
+HTML iyice öğrenildikten sonra mutlaka bilinmesi gereken diğer bir program CSS olmalıdır. HTML kodlarının ilgili tarayıcıda okunan şekline stil vermek için çoğunlukla CSS programı kullanılır.
+HTML, CSS ve JS ile web sitesi tasarlanabilir.Ancak dinamik ve daha kaliteli hale getirmek için ASP.net, JAVA gibi diller de kullanılmalıdır.
+

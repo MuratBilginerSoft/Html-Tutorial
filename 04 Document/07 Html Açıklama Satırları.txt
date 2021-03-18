@@ -1,0 +1,13 @@
+Html dokümanlarımız içinde her yazılım geliştirme sürecinde olduğu gibi yaptıklarımızı not düşmeye bizden sonraki yazılımcıya ya da bizimle beraber çalışan takım arkadaşlarımıza bilgi vermek için hmtl içinde açıklama satırlarına ihtiyaç duyarız.
+
+Html de açıklama satırlarına
+
+<!-- 
+
+Açıklamalar...
+
+-->
+
+Bu iki etiket arasına yazılır. Burada yazılan hiçbir şey tarayıcı tarafından dikkate alınmaz. Ve Tarayıcı sayfa görüntüle kısmında da gözükmeyecektir. Tamamen gizli ve size özel kalacaktır. 
+
+Bu kadardı.

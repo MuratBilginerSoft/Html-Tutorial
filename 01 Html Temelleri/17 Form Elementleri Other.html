@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anasayfa</title>
+</head>
+<body>
+
+    <form>
+
+        <label for="cars">Choose a car:</label>
+
+        <select id="cars" name="cars" size="2" multiple>
+
+        <option value="volvo">Volvo</option>
+        <option value="saab" selected>Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+
+        </select><br><br>
+
+        <button type="button" onclick="alert('Hello World')">Tıkla</button>
+
+        <label for="cars">Choose a car:</label>
+        <select  name="cars" id="cars">
+          <optgroup label="Swedish Cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+          </optgroup>
+          <optgroup label="German Cars">
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+          </optgroup>
+
+    </form>
+    
+
+    <br><br>
+
+    <form action="/index.html">
+
+        <fieldset>
+          <legend>Personal:</legend>
+          <label for="fname">First name:</label><br>
+          <input type="text" id="fname" name="fname" value="John"><br>
+          <label for="lname">Last name:</label><br>
+          <input type="text" id="lname" name="lname" value="Doe"><br><br>
+          <input type="submit" value="Submit">
+        </fieldset>
+
+
+        <input list="tarayicilar">
+
+        <datalist id="tarayicilar">
+
+            <option value="Internet Explorer">
+
+            <option value="Firefox">
+
+            <option value="Opera">
+
+            <option value="Safari">
+
+            <option value="Chrome">
+
+        </datalist>
+
+      </form>
+
+      <form action="/action_page.php"
+        oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        0
+        <input type="range"  id="a" name="a" value="50">
+        100 +
+        <input type="number" id="b" name="b" value="50">
+        =
+        <output name="x" for="a b"></output>
+        <br><br>
+        <input type="submit">
+      </form>
+
+     
+</select>
+
+
+    
+</body>
+</html>
+
+<!--
+
+    En önemli form elementi inputu işledikten sonra şimdi diğerlerine bakacağız.
+
+    1. Select 
+
+    Bir dropdown butonu oluşturabilmek için kullanılır.
+
+    <label for="cars">Choose a car:</label>
+
+    <select id="cars" name="cars">
+
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+    
+    </select>
+
+    Optionlardan biri seçili olarak gelsin istersek istediğimiz option'a selected özelliğini veririz.
+
+     <option value="saab" selected>Saab</option>
+
+     Başlangıçta açıkta kaç değer görüntüleneceğini size ile belirleyebiliriz.
+
+     <select id="cars" name="cars" size="2">
+
+    Eğer çoklu seçime izin vericeksek multiple özelliğini aktif etmeliyiz.
+
+    <select id="cars" name="cars" size="2" multiple>
+
+    2. Button elementi 
+
+    <button type="button" onclick="alert('Hello World')">Tıkla</button>
+
+    Burada onclick butona ait bir eventtir. Ve eventler kendilerine çalıştırabilecekleri birer fonksiyon alırlar.
+
+    3. Form ögelerini gruplamak için fieldset kullanılır.
+
+    <legend>Elemanı için bir başlık tanımlar <fieldset> elemanı.
+
+
+     <form action="/index.html">
+
+        <fieldset>
+          <legend>Personal:</legend>
+          <label for="fname">First name:</label><br>
+          <input type="text" id="fname" name="fname" value="John"><br>
+          <label for="lname">Last name:</label><br>
+          <input type="text" id="lname" name="lname" value="Doe"><br><br>
+          <input type="submit" value="Submit">
+        </fieldset>
+      </form>
+
+      optgroup ile liste elemanları gruplanarak gösterilebilir.
+
+       <label for="cars">Choose a car:</label>
+        <select  name="cars" id="cars">
+          <optgroup label="Swedish Cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+          </optgroup>
+          <optgroup label="German Cars">
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+          </optgroup>
+    
+      4. <datalist> etiketi <input> etiketi için önceden tanımlanmış açılabilir liste tanımlar.
+
+<datalist> etiketi "otomatik tamamlama" özelliğini tanımlar. Kullanıcı veri girişi yaptığında önceden tanımlanmış açılabilir liste gözükecektir.
+
+<datalist> etiketi <input> etiketine bağlanırken input etiketinin list özelliği kullanılır.
+
+     <input list="tarayicilar">
+
+        <datalist id="tarayicilar">
+
+            <option value="Internet Explorer">
+
+            <option value="Firefox">
+
+            <option value="Opera">
+
+            <option value="Safari">
+
+            <option value="Chrome">
+
+        </datalist>
+
+        5. <output>(Bir komut tarafından gerçekleştirilen gibi) elemanı bir hesaplama sonucunu temsil etmektedir.
+
+            <form action="/action_page.php"
+            oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+            0
+            <input type="range"  id="a" name="a" value="50">
+            100 +
+            <input type="number" id="b" name="b" value="50">
+            =
+            <output name="x" for="a b"></output>
+            <br><br>
+            <input type="submit">
+            </form>
+
+-->

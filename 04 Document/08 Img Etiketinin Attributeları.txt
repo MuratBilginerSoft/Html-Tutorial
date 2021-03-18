@@ -1,0 +1,22 @@
+Özellik	    Değer	Tanımı
+align	    left    Çevresindeki nesnelere göre nasıl hizalanacağını belirtir.
+            right   HTML5 desteklenmiyor.
+            top
+            middle
+            bottom	 
+
+alt         metin	Görüntü yerine alternatif metin belirtir.HTML5 desteklenmiyor.
+
+border	    piksel	Resim etrafındaki kenarlığın genişliğini belirtir.
+crossorigin	anonymous  Canvas etiketine erişime diğer sitelerden izin verileceğini belirtir.
+            use-credentials 
+height	    piksel	Görüntünün piksel cinsinden yüksekliğini belirtir.
+hspace	    piksel	Görüntünün sağ ve sol tarafında bırakılacak boşluğu belirtir.
+HTML5 desteklenmiyor.
+ismap	    ismap	Sunucu taraflı bir resim haritası olduğunu belirtir.
+longdesc	URL	Görüntünün uzun açıklamasını içeren URL adresini belirtir.
+HTML5 desteklenmiyor.
+src	        URL	Görüntünün URL adresini belirtir.
+usemap	    harita-ismi	İstemci taraflı resim haritası olduğunu belirtir.
+vspace	    piksel	Görüntünün üst ve altında bırakılacak boşluğu belirtir.
+width	    piksel	Görüntünün piksel cinsinden genişliğini belirtir.

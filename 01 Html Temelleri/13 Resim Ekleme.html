@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anasayfa</title>
+</head>
+<body>
+
+
+    <h1>Resimleri Göreceğiz</h1><br><br>
+
+    <img src = "iq.png"><br><br>
+
+    <img src = "Images/iq.png"><br><br>
+
+    <img src = "../03 Images/01.13.02.png"><br><br>
+    
+    <img src = "https://www.webcebir.com/imageshtml/link.jpg"><br><br>
+
+    <img src = "iq.png" alt ="IQ Aralıkları Tanımları"><br><br>
+
+    <img src = "iq.png" alt ="IQ Aralıkları Tanımları" width="200px" height = "200px"><br><br>
+
+    <img src = "iq.png" alt ="IQ Aralıkları Tanımları" width="200px" height = "200px" border ="2px"><br><br>
+
+    
+</body>
+</html>
+
+<!--
+
+    Bir Html dokümanını artık yavaş yavaş daha ilgi çekici ve dinamik hale getirmeye başladık. 
+
+    Bir dokümana eklemek isteyeceğimiz ögelerden biri de kesinlikle resimler oluyor. Bir resim hem metni daha açıklanabilir kılmak için ya da ilgi çekmek için ya da bir eğitim dokümanı ekran görüntüsü olarak eklenmesi için gerek duyduğumuz bir olay.
+
+    Bunun için de tabii ki HTML de bir çözüm var.
+
+    Htmlde resimler <img> etiketi ve bu etiketin src attribute'u sayesinde eklenir.
+
+    img > image'ın kısaltmasıdır. img etiketinin kapanış etiketi yoktur.
+    
+    src > Source yani kaynak kelimesinin kısaltılmasıdır.
+
+    Esasen html belgesine şunu deriz. <img> ben bir resim ekleyeceğim. Tarayıcı bize sorar peki hangi resmi ekliyim.
+    <img src = "abc.png" > src de gösterdiğim adresteki kaynaktaki resmi göster.
+
+    Burada bilmeniz gereken önemli konulardan biri şudur. 
+
+    O anda çalışan html dokümanı hangi dizinde ise orası kök dizindir. Ve aynı dizinde bulunan dosyalara doğrudan ismiyle erişilebilir.
+
+    Şimdi bu html dosyası ile aynı dizine bir resim ekliyorum.
+
+    ıq.png dosyası ile aynı dizindeyiz ve bunu ekranda göstermek istersem şunu yapmam yetecektir.
+
+    <img src = "iq.png">
+
+    Sayfamızı kaydedip çalıştırdığımızda 01.13.01.png isimli resimdeki gibi görürüz.
+
+    Resme kendimiz herhangi bir boyut vermediğimiz için orijinal boyutuyla gözüktü. 
+
+    Birazdan boyutlarıyla ilgileneceğiz.
+
+    2. Resim dosyası farklı klasörler altında yer alsaydı nasıl kaynak gösterecektik.
+
+    Örneğin iq.png'den Images içine de bir tane ekleyelim.
+
+    Images'a baktığımda dosyamızla aynı kök dizinde gözüküyor. O zaman Images'ı yazıyorum. İçine odaklanmak için sonrasında / işaretini kullanıyoruz. Bu bahsedilen klasörün içini işaret eder.
+
+    <img src = "Images/iq.png"><br><br>
+
+    3. Peki aynı kök dizinde olmasaydı.
+
+    İşte burada yeni bir kavram devreye giriyor. Alacağımız kaynak kök dizine göre nerede ona bakıyoruz. ve src ye adres verirken. Başlangıca koyduğumuz her nokta . kök dizinden bir dışarı klasöre çıkmamıza yardımcı olur. Ancak şunu unutmayınız ilk nokta kök dizinin kendisini işaret ediyor olacak.
+
+    Örneğin kök dizinin dışındaki 03 Images klasörü içindeki 01.13.02.png adresine gitmeye çalışalım. 
+
+    01 Html Temellerinin dışına bir kere çıksak 03 Images klasörünün kök dizinine ulaşmış oluruz.
+
+    <img src = "../03 Images/01.13.02.png"><br><br>
+
+    İlk nokta dedik ki şu anda dosyanın kendi dizinini işaret ediyor. Bir kere dışarı çıkacağımız için bir nokta daha koymamız yetti. 
+
+    Bunu dosya konumlarını değiştirerek kendiniz deneyebilirisiniz.
+
+    4. Bir internet adresindeki resim kaynağınıda gösterebiliriz. src yerine resmin linkini vermeniz yeterli olacaktır.
+
+    <img src = "https://www.webcebir.com/imageshtml/link.jpg"><br><br>
+
+    5. Bazen resim eğer kaynakta yoksa orada bir crash işareti gözükür. Bu tür durumlarda Google'ı ve kullanıcıyı orada hangi resmin olduğunu bildirebilmek için alt attribute'u ile ilgili resme bir tanıtıcı isim verilebilir. Bu isim normalde görülmez ancak Google'ın o resmin ne olduğunu anlamasına yardımcı olur. Böylece google aramalarında resminizle eşleşen aramalarda sizi gösterebilir.
+    
+     <img src = "iq.png" alt ="IQ Aralıkları Tanımları"><br><br>
+
+     6. Pek çok attribute ile resmi şekillendirebiliriz. width ve height değerlerini kendimiz verelim ve resmi boyutlandıralım.
+
+     <img src = "iq.png" alt ="IQ Aralıkları Tanımları" width="200px" height = "200px"><br><br>
+
+     Değerin hangisini vermezseniz o otomatik olarak orijinal değerini alır.
+
+     7. Border özelliği ile kenarlık değerleri belirlenebilir.
+
+     <img src = "iq.png" alt ="IQ Aralıkları Tanımları" width="200px" height = "200px" border ="2px"><br><br>
+
+     Diğer özelliklerinin tamamı için Document kısmına göz atınız.  02 Document\05 Img Etiketinin Attributeları.txt
+
+    
+-->

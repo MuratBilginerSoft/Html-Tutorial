@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnaSayfa</title>
+</head>
+<body>
+
+    <table>
+
+        <caption>Personel Tablosu</caption>
+
+        <tr>
+            <th>Id</th>
+            <th>Adı</th>
+            <th>Soyadı</th>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>Murat</td>
+            <td>Bilginer</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>Ferhat</td>
+            <td>Bilginer</td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>Meryem</td>
+            <td>Bilginer</td>
+        </tr>
+
+    </table>
+
+    <hr>
+
+    <table border="1px" cellpadding="5px">
+
+        <caption>Personel Tablosu</caption>
+
+        <thead>
+
+            <tr>
+                <th>Id</th>
+                <th>Adı</th>
+                <th>Soyadı</th>
+            </tr>
+
+        </thead>
+       
+        <tbody>
+            
+            <tr>
+                <td>1</td>
+                <td>Murat</td>
+                <td>Bilginer</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Ferhat</td>
+                <td>Bilginer</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>Meryem</td>
+                <td>Bilginer</td>
+            </tr>
+    
+        </tbody>
+
+        <tfoot>
+
+            <tr>
+                <td></td>
+                <td></td>
+                <td>3 Kişi</td>
+            </tr>
+
+        </tfoot>
+
+        
+
+    </table>
+    
+</body>
+</html>
+
+<!--
+
+    Listeler oluşturmak güzeldi ama bazen listeler bize yetmez.
+
+    Örneğin veri tabanından gelmiş dataları bir liste halinde göstermek istediğimizde görseli daha güçlü olacak şekilde imdadımıza tablolar yetişir.
+
+    Ama çok kullanılıyor mu derseniz hayır diyebiliriz artık. Şu ana kadar görmedik ama tablolar yerine divleri ve bunları daha güzel hale getirecek şekilde css kodlarını kullanmaya başladık.
+
+    Ama bu konuyu bilmek iyi olacaktır.
+
+    1. Bir tablo <table> </table> etiketleri ile başlar. 
+
+
+    <table>
+
+        
+    </table>
+
+    2. <th> ile bu tabloda var olacak colon headerları tanımlanabilir. Varsayılan fontu kalındır.
+
+    3. Tabloda bir satır yani row oluşturabilmek için <tr> </tr> etiketleri kullanılır.
+
+    Şimdi headerlar için bir row oluşturalım ve bu headerları tanımlayalım.
+
+     <table>
+        <tr>
+            <th>Id</th>
+            <th>Adı</th>
+            <th>Soyadı</th>
+        </tr>
+
+    </table>
+
+    4. <td> </td> etiketi ile tablo içinde headerlar altına ilgili dataların girdisi sağlanabilir.
+
+    tdleri oluşturabilmek için her defasında bir row oluşturmak gerektiğini unutmamalıyız.
+
+    Şimdi bir satır veri girişi yapalım.
+
+     <tr>
+            <td>1</td>
+            <td>Murat</td>
+            <td>Bilginer</td>
+    </tr>
+
+    Aslında şu anda en basit tablomuzu oluşturmuş olduk.
+    
+    Ancak ekran görüntüsüne göz atarsanız pekte iç açıcı bir tablo olmadığını görebilirsiniz.
+
+
+    Bir kaç satır daha veri ekleyelim ve biraz tablomuzu şeklen güzelleştirelim.
+
+    5. Bir tablo head body ve foot kısımlarından oluşur.
+
+    Bunları kendimiz gösterebiliriz.
+
+    th etiketi ile yazılan header kısmı <thead> </thead> etiketi arasına yazılır. Bu başlıkları daha kolay ayrıştırmamızı da sağlar.
+
+      <thead>
+
+            <tr>
+                <th>Id</th>
+                <th>Adı</th>
+                <th>Soyadı</th>
+            </tr>
+
+        </thead>
+
+    İçerik kısmı <tbody> </tbody> arasına yazılır.
+
+     <tbody>
+            
+            <tr>
+                <td>1</td>
+                <td>Murat</td>
+                <td>Bilginer</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Ferhat</td>
+                <td>Bilginer</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>Meryem</td>
+                <td>Bilginer</td>
+            </tr>
+    
+        </tbody>
+
+        Son olarak eğer tablonun son satırında bir bilgi verilemk istenirse tablonun tamamıyla ilgili footer kısmıdır.
+
+        <tfoot> </tfoot> arasına yazılır.
+
+          <tfoot>
+
+            <tr>
+                <td></td>
+                <td>3 Kişi</td>
+                <td></td>
+            </tr>
+
+        </tfoot>
+
+    6. Bir tablonun ne ile ilgili olduğunu <caption> etiketiyle verebiliriz.
+
+         <caption>Personel Tablosu</caption>
+
+         table etiketinden hemen sonra yazılır.
+
+    7. Tableın border ve cellpadding özelliklerine değerler vererek tablomuzu biraz daha güzelleştirelim.
+
+    8. Tabloda satır(lar) ve sütun(lar) içerisinde birleştirme,  ayırma, şekillendirme vb. işlemleri uygulayabilmek için kullanılabilen özellikler vardır.
+
+    Sütun için; <colspan></colspan>, satır için; <rowspan></rowspan> etiketleri kullanılır.
+
+    Example kısmında örneklerine göz atabilirsiniz.
+
+    
+-->

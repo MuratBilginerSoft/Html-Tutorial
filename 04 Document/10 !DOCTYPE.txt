@@ -1,0 +1,72 @@
+DOCTYPE
+
+Hazırladığınız sayfaların hangi tipte bir belge olduğunu tarayıcıya (browser) bildirmek için kullanılır. Bu sayede tarayıcı bu sayfayı hangi standarda (hangi HTML sürümü kullanılmış) göre yorumlayacağını anlamış olur. Eğer DOCTYPE kullanılmazsa tarayıcılar sayfaları standarda uygun olarak yorumlamayacak, dolayısıyla her tarayıcı size farklı farklı sonuçlar verecektir. Sitenin tarayıcılarda farklı görünmesinin nedenlerinden birisi DOCTYPE kullanılmamasıdır. Yani siteniz Chrome'da düzgün ama IE'de yamuk yumuk görünmesin istiyorsanız DOCTYPE kullanmalısınız.
+
+Doğru DOCTYPE Tanımlaması
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Başlık</title>
+</head>
+<body>
+Site içeriği...
+</body>
+</html>
+
+
+Yanlış DOCTYPE Tanımlaması
+
+<!DOCTYPE html>
+<head>
+<title>Başlık</title>
+</head>
+<body>
+Site içeriği...
+</body>
+</html>
+
+
+
+DOCTYPE Versiyonları
+
+Her HTML versiyonu için değişik DOCTYPE tanımlaması vardır. Aşağıda bütün HTML versiyonları için DOCTYPE tanımlamalarını göreceksiniz.
+
+1) HTML5
+
+<!DOCTYPE html>
+ 
+
+2) HTML 4.01 Strict
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+ 
+
+3) HTML 4.01 Transitional
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+ 
+
+4) HTML 4.01 Frameset
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+ 
+
+5) XHTML 1.0 Strict
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+ 
+
+6) XHTML 1.0 Transitional
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+ 
+
+7) XHTML 1.0 Frameset
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+ 
+
+8) XHTML 1.1
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">

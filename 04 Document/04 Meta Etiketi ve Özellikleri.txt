@@ -1,0 +1,54 @@
+Site meta tagları temel olarak site hakkında arama motorlarının ve robotların bilgi almasını sağlayan alt verilerdir. Meta Data aslında bilgisayar dahilindeki nerdeyse her şeyde bulunmaktadır. Örnek olarak, müzik dosyalarında sanatçı bilgisini, albümü, parça süresini vs tutarlar.
+
+Ancak iş web sitelerde biraz daha genişleyebilir. Meta taglar ile sitenin nasıl görüntüleneceğine dair de bilgi verebilirsiniz. Ya da facebook connect içeren bir site ise facebookta paylaşılan verileri buraya yerleştirebilirsiniz. Bazen de zorunlu durumlarda bu meta taglar kullanıcının tarayıcısını kimseyi zahmete sokmadan yönlendirir.
+
+ 
+
+Görünüm Düzeltmeleri
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> : Site karakter içeriği
+<meta http-equiv="Content-language" content="tr" /> : Site dili
+<meta http-equiv="imagetoolbar" content="no" /> : Resimler için çıkan ekstra yönlendirmeleri kapatma
+ 
+
+Site Bilgisi
+<meta name="description" content="Bilgisayar dahilinde oluşan sorunlara ve ulaşılası ayrıntı bilgilere sahip yapı." /> : Site Açıklaması
+<meta name="author" content="spielersun" /> : Site sahibi
+<meta name="keywords" content="bilgisayar,hata,bozuk,sorun" /> : Site için tanımlanabilecek temel etiketler
+<meta name="copyright" content="all content copyright 2010 pt corp." /> : Site hakları bilgisi
+<meta name="title" content="Bilgi Sayamıyorum"/> : Site başlığı (title tagı da kullanılabilinir)
+ 
+
+*Open Graph ve Facebook metaları kullanılıyorsa eklenmelidir. Bunlar için html tagına aşağıdakileri eklemelisiniz :
+
+<html xmlns:og="http://opengraphprotocol.org/schema/"
+      xmlns:fb="http://www.facebook.com/2008/fbml">
+ 
+Open Graph Site Bilgisi
+<meta property="og:type" content="article" /> : Open Graph için sayfa tipi
+<meta property="og:image" content="http://bilgisayamiyorum.com/preview.jpg" /> : Open Graph için sayfa ufak görüntüsü
+<meta property="og:site_name" content="Bilgi Sayamıyorum" /> : Open Graph için site adı
+ 
+
+Facebook Uygulama Bilgisi
+<meta property="fb:app_id" content="***" /> : Facebook Uygulama ID si
+ 
+
+Ekstra Değişiklikler 
+*Sadece gerekli durumlar için
+
+<meta http-equiv=X-UA-Compatible content="IE=Edge;chrome=1"> : Chrome Frame Ekler
+<meta name="robots" content="noindex, nofollow" /> : Sayfaların indekslenmesini engeller.
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" /> : IE8 deki görüntülenmeyi IE7 de gibi gösterir.
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7,chrome=1" /> : IE8 deki görüntülenmeyi IE7 de gibi gösterir, Chrome Frame Ekler.
+<meta name="robots" content="noodp,noydir" /> : Dmoz açıklamasını ve ekstra arama motoru açıklamalarını gizler.
+<meta name=viewport content="width=device-width, initial-scale=1.0"> : Görünüm genişliğini kullanılan alete göre ayarlar. 
+ 
+
+Ekstra bilgiler her sitede değişiklik gösterebilir. Bazen uygulama bilgileri için de kullanılabilinirler. 
+
+Örnek olarak IMDB.com un ekstra metaları :
+
+<meta name="application-name" content="IMDb" /> 
+<meta name="msapplication-tooltip" content="IMDb Web App" /> 
+<meta name="msapplication-window" content="width=1500;height=900" /> 
+<meta name="msapplication-task" content="name=Find Movie Showtimes;action-uri=/showtimes/;icon-uri=http://i.media-imdb.com/images/SFff39adb4d259f3c3fd166853a6714a32/favicon.ico"/> 

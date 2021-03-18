@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anasayfa</title>
+</head>
+<body>
+
+    <h1> Brainy Restorant </h1>
+
+    <p>Aşağıda Bölüm Bölüm Restorantımızdaki Ürünler Bulunmaktadır. Lütfen isteklerinizi sipariş olarak iletiniz.</p>
+
+    <h3>Kahvaltılar</h3>
+
+    <ul>
+        <li>Omlet</li>
+        <li>Zeytin</li>
+        <li>Çikolata</li>
+        <li>Reçel</li>
+
+    </ul>
+
+    <h3>Ara Sıcaklar</h3>
+
+    <ul>
+
+        <li>Omlet</li>
+        <li>Zeytin</li>
+        <li>Çikolata</li>
+        <li>Reçel</li>
+
+    </ul>
+
+    <h3>Ara Sıcaklar</h3>
+    
+    <ul type="circle">
+
+        <li>Omlet</li>
+        <li>Zeytin</li>
+        <li>Çikolata</li>
+        <li>Reçel</li>
+
+    </ul>
+
+    <h3>Ara Sıcaklar</h3>
+    
+    <ul type="square">
+
+        <li>Omlet</li>
+        <li>Zeytin</li>
+        <li>Çikolata</li>
+        <li>Reçel</li>
+
+    </ul>
+
+    <h3>Ara Sıcaklar</h3>
+    
+    <ul type="none">
+
+        <li>Omlet</li>
+        <li>Zeytin</li>
+        <li>Çikolata</li>
+        <li>Reçel</li>
+
+    </ul>
+
+    <h3>Ara Sıcaklar</h3>
+    
+    <ol>
+        <li>Omlet</li>
+        <li>Zeytin</li>
+        <li>Çikolata</li>
+        <li>Reçel</li>
+    </ol>
+
+    <h3>Ara Sıcaklar</h3>
+    
+    <ol type="A">
+        <li>Omlet</li>
+        <li>Zeytin</li>
+        <li>Çikolata</li>
+        <li>Reçel</li>
+    </ol>
+
+    <h3>Ara Sıcaklar</h3>
+    
+    <ol  type="a">
+        <li>Omlet</li>
+        <li>Zeytin</li>
+        <li>Çikolata</li>
+        <li>Reçel</li>
+    </ol>
+
+    <h3>Ara Sıcaklar</h3>
+    
+    <ol type="i">
+        <li>Omlet</li>
+        <li>Zeytin</li>
+        <li>Çikolata</li>
+        <li>Reçel</li>
+    </ol>
+
+    <h3>Ara Sıcaklar</h3>
+    
+    <ol type="I">
+        <li>Omlet</li>
+        <li>Zeytin</li>
+        <li>Çikolata</li>
+        <li>Reçel</li>
+    </ol>
+
+    <dl>
+        <dt>C#</dt>
+          <dd>Bir Programlama Dilidir</dd>
+
+        <dt>Html</dt>
+          <dd>Bir İşaretleme Dilidir</dd>
+    </dl>
+
+
+
+    
+</body>
+</html>
+
+<!--
+
+    Bir Html dökümanı içinde sıklıkla ihtiyaç duyacağımız özelliklerden biri de birbiriyle ilişkili menüler ve listeler oluşturmak olacak.
+
+    Örneğin bir restorant için Kahvaltı başlığı altında ürünlerin listelenmesi gibi.
+
+    Ya da HMTL dokümanımıza bir içindekiler bölümü oluşturmak için. 
+
+    Gerçek hayattanda bildiğimiz üzere bazı listelerimizde bir sıra gözetiriz sıralı şekilde ilerlesin ve bunu da bana bildirsin isterim.
+
+    Bazı listelerimiz içinse sıranın önemi yoktur. O listede olması bizim için yeterlidir.
+
+    İşte bu iki durumda ele alınmış ve çözülmüş
+
+    Şimdi ilk olarak bir liste tanımlama ile başlayalım.
+
+    1. Bir liste eğer sıralı ise <ol> </ol> etiketi ile başlar ve içine liste elemanları <li> </li> elemanı ile yazılır.
+
+    2. Bir liste eğer sırasız ise <ul> </ul> etiketi ile başlar ve içine liste elemanları <li> </li> elemanı ile yazılır.
+
+    ol > orderedlist 
+    ul > unorderedlist kısaltmalarıdır.
+
+     <h3>Kahvaltılar</h3>
+
+    <ul>
+        <li>Omlet</li>
+        <li>Zeytin</li>
+        <li>Çikolata</li>
+        <li>Reçel</li>
+
+    </ul>
+
+    <h3>Ara Sıcaklar</h3>
+    <ul>
+
+        <li>Omlet</li>
+        <li>Zeytin</li>
+        <li>Çikolata</li>
+        <li>Reçel</li>
+
+    </ul>
+
+    Ekran çıktısında gördüğünüz üzere sırasız bir liste oluştu ve liste elemanlarının başında bir disc vardı. Bu standart typedır.
+
+    Ancak sırasız listelerde bu type'ı değiştirebiliriz.
+
+    disc | square | circle | none
+
+    type attributena bu değerleri vererek sonuçları görebiliriz.
+
+    3. Listemizi sıralı bir liste haline getirelim.
+
+     <ol>
+        <li>Omlet</li>
+        <li>Zeytin</li>
+        <li>Çikolata</li>
+        <li>Reçel</li>
+    </ol>
+
+    Sıralı listelerimizde standart typeımız sayıdır.
+
+    Ama şunlarda kullanılabilir.
+
+    1 | A | a | I | i
+
+    Yine deneyelim.
+
+    4. Type yerine hatalı bir ifade girerseniz standart typeı alır.
+
+    5. Açıklama Listeleri
+
+    Liste elemanlarını kapsayacak şekilde <dl></dl> etiketleri kullanılarak oluşturulur. Liste içerisinde tanımlama yapılacağı zaman kullanışlı olan listeleme yöntemidir.
+
+    dl etiketi içinde tanımlama yapılacak kavram için dt etiketi tanımı içinde dd etiketi kullanılır.
+
+     <dl>
+        <dt>C#</dt>
+          <dd>Bir Programlama Dilidir</dd>
+
+        <dt>Html</dt>
+          <dd>Bir İşaretleme Dilidir</dd>
+    </dl>
+
+    bir dt etiketi altına istediğiniz kadar dd etiketi yazabilirsiniz.
+
+    6. Listeler Karmaşık Şekilde İç içede kullanılabilir. Examples kısmından göz atabilirsiniz.
+
+
+-->

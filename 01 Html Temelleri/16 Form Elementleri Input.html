@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <from action="index.html" method="GET">
+
+    </from>
+
+    <from action="index.html" method="POST">
+
+        <label for="adı">Adınız</label> 
+        <input type="text" name="adı" placeholder="Adınız" value="Murat"><br><br>
+        Soyadınız: 
+        <input type="text" name="adı" placeholder="Adınız" value = "Bilginer"><br><br>
+        Email:
+        <input type="email" name="email" value="mbilginer@brainytech.net"><br><br>
+        Tel:
+        <input type="number" name="tel" value="05546587250"><br><br>
+        Sayısal:
+        <input type="number" name="sayı" min="1" max="100" value="1"><br><br>
+        Şifre:
+        <input type="password" name="şifre" value="gelisim"><br><br>
+        Cinsiyet:
+        <input type="radio" name="cinsiyet" value="Erkek">Erkek
+        <input type="radio" name="cinsiyet" value="Kadın">Kadın<br><br>
+        Yemek Listesi:
+        <input type="checkbox" name="yemek1">Çorba
+        <input type="checkbox" name="yemek2">Döner
+        <input type="checkbox" name="yemek3">Künefe<br><br>
+
+        Adres:
+        <textarea name="adres" placeholder="Adres">Atakent 3. Etap</textarea><br><br>
+
+        <label for="dosya">Yüklemek İstediğiniz Dosyayı Seçiniz</label>
+        <input type="file" name="dosya"><br><br>
+
+        <label for="tarih">Tarih Seçiniz</label>
+        <input type="date" name="tarih">
+
+        <br><br>
+
+        <label for="tarih2">Tarih Ve Saat Seçiniz</label>
+        <input type="datetime-local" name="tarih2">
+
+        <br><br>
+
+        <label for="tarih3">Ay ve Yıl Seçiniz</label>
+        <input type="month" name="tarih3">
+
+        <br><br>
+
+        <label for="renk">Renk Seçiniz</label>
+        <input type="color" name="renk">
+
+        <br><br>
+
+        <label for="sayı2">Sayı Seçiniz</label>
+        0<input type="range" name="sayı2" min="0" max="100">100
+
+        <br><br>
+
+        <label for="homepage">Ana sayfanızı ekleyin:</label>
+        <input type="url" name="homepage">
+
+        <br><br>
+
+        <label for="week">Haftayı ve Yılı Giriniz</label>
+        <input type="week" name="week">
+
+        <br><br>
+
+        <input type="submit" name="gönder" value="Gönder">
+
+        <input type="button" name="gönder" value="Gönder">
+
+         
+    </from>
+
+</body>
+</html>
+
+<!--
+
+    Bugüne kadar öğrendiğimiz HTML özellikleri hep bizden kullanıcıya bir deklarasyon ya da bilgi sağladığımız ekranlar yaratmamızı sağladı.
+
+    Peki bir web sayfası sadece bilgi göstermek için mi kullanılır. Tabii ki hayır. Kullanıcıyla etkileşimde kurar iyi web sayfaları.
+
+    İşte input ögelerini sağlayacak etiketlerimizde sıra.
+
+    Bir sayfada input ögeleri kullanılacak ve buradaki bilgiler farklı ekranlardan tekrar erişilecekse bu ögeleri form etiketi içine yerleştirmek gerekir.
+
+    Form etiketinin ise önemli attributeları vardır. Onlardan biri action attribute'u.  
+
+    Action attribute'u bu form hangi sayfaya gönderilecek bunu belirler.
+
+    <from action="index.html">
+
+    </from>
+
+
+    Bu şekilde hazırladığımız bir form içinde submit butonuyla bu formu gönderdiğimiz form içindeki elemanları ile beraber index.html sayfasına yönlenir.
+
+    2. Bir diğer attribute'umuz ise method bu attribute get ve post olmak üzere iki değer alır. Eğer get değerini alırsa form üzerinden gönderilen bilgiler adres çubuğuna eklenecektir. 
+
+    Post metoduyla gönderirsek adres çubuğunda gösterilmeden gizli gönderilecektir. Hangisini kullanmanız gerektiğini programcı olarak programın güvenliğini tehlikeye atmayacak şekilde siz belirlersiniz.
+
+
+    3. Form ögesi içine nesnelerimiz yerleştirilir.
+
+    Bunlar genelde kullanıcıdan giriş beklediğimiz alanlar olduğu için <input> etiketi ile gösterilen alanlardır. 
+    input etiketi kapanış etiketine ihtiyaç duymaz.
+
+     <from action="index.html" method="POST">
+
+        <input>
+
+    </from>
+
+    4. input etiketi tek başına bir text field gibi davranacaktır. Ancak bu çok anlamlı bir ifade değildir. 
+
+    input'u anlamlı hale getirecek attributelarımız var.
+
+    Onlardan biri type. Type attribute'u 
+
+    text
+    email
+    number
+    radio
+    password
+    checkbox
+    file
+    submit
+
+    bu özellikleri alır.
+
+    text ile başlayalım.
+
+    Text kullanıcıda bir değer metinsel ya da sayısal ifade girdisi almak için kullanılır.
+
+    <from action="index.html" method="POST">
+
+        <input type="text">
+
+    </from>
+
+    Form içindeki nesnelerin değerlerini daha sonra alacağımız için her bir etikete bir name vermeliyiz. Ve nameler benzeşmemeli.
+
+    Bir textfielda ne girilmesi gerektiğini textfieldın üzerinde ya da yanında yazarak bunu bildirebiliriz.
+
+    <from action="index.html" method="POST">
+
+        Adınız: 
+        <input type="text" name="adı">
+
+    </from>
+    
+
+    Ancak bunu daha güzel bir şekilde yapmak için placeholder özelliğine bir değer yazarsak textfiel içinde silik bir şekilde o gözükecektir.
+
+     <from action="index.html" method="POST">
+
+        Adınız: 
+        <input type="text" name="adı" placeholder="Adınız">
+
+    </from>
+
+    6. Bu textfiel alanına bir email girilmesini istiyorsak type'ı email olmalı.
+
+        Email:
+        <input type="email" name="email">
+    
+    7. Sadece sayı girişi için number type'ı girilir.
+
+    Sayı girişlerine bir sınır verilebilir.
+    min ve max özellikleri ile.
+
+     Tel:
+        <input type="number" name="tel" value="05546587250"><br><br>
+        Sayısal:
+        <input type="number" name="sayı" min="1" max="100" value="1"><br><br>
+
+
+    8. Eğer şifre gibi girilen alan gizlenecek ise password type kullanılır.
+
+     Şifre:
+        <input type="password" name="şifre"><br><br>
+
+    9. Adres gibi uzun bir alan girilecekse bunun için input girişi değil doğrudan textarea etiketi kullanılır.
+
+     Adres:
+        <textarea name="adres" placeholder="Adres"></textarea>
+
+    10. Bu typeların value değerleri ile ilk değerleri de belirlenebilir.
+
+     <from action="index.html" method="POST">
+
+        Adınız: 
+        <input type="text" name="adı" placeholder="Adınız" value="Murat"><br><br>
+        Soyadınız: 
+        <input type="text" name="adı" placeholder="Adınız" value = "Bilginer"><br><br>
+        Email:
+        <input type="email" name="email" value="mbilginer@brainytech.net"><br><br>
+        Tel:
+        <input type="number" name="tel" value="05546587250"><br><br>
+        Şifre:
+        <input type="password" name="şifre" value="gelisim"><br><br>
+        Adres:
+        <textarea name="adres" placeholder="Adres">Atakent 3. Etap</textarea>
+
+    </from>
+
+    11. Bir çoklu değer içinden tek bir sey seçilecekse örneğin form da kadın mı erkek mi sorusu cevaplandırılacak. Böyle durumlar için radio kullanılır.
+
+    Bir grup radio buton name değeri aynı verilirse radio butonlar arasında tekli seçim yapmayı sağlar. Eğer radio butonların name'i farklı olursa her radio buton seçilebilir duruma gelir.
+
+    Cinsiyet:
+        <input type="radio" name="cinsiyet" value="Erkek">Erkek
+        <input type="radio" name="cinsiyet" value="Kadın">Kadın<br><br>
+
+    Bu şekilde aynı isimle bir grup oluşturmuş şekilde pek çok radio buton oluşturabiliriz.
+
+    12. Eğer bir listeden çoklu seçim yaptıracaksak checkbox kullanılır. Örneğin bir pizza malzeme seçimi yaparken bu tür bir form ögesi kullanılabilir.
+
+
+     Yemek Listesi:
+        <input type="checkbox" name="yemek1">Çorba
+        <input type="checkbox" name="yemek2">Döner
+        <input type="checkbox" name="yemek3">Künefe<br><br>
+
+    13. label etiketi ile ilgili inputlara bir bilgilendirme yazabiliriz. Biz normalde doğrudan bunu adınız yazarak yapmıştık ancak şöylede yapılabilirdi.
+    
+    <label for="adı">Adınız</label> 
+        <input type="text" name="adı" placeholder="Adınız" value="Murat"><br><br>
+    
+    Burada label'ın for attribute'u yardımıyla 
+
+    14. Kullanıcıdan bir dosya yüklemesini istersek file type'ı kullanılır.
+
+     <label for="dosya">Yüklemek İstediğiniz Dosyayı Seçiniz</label>
+        <input type="file" name="dosya">
+
+    15. Tarih girdisi almak için date type'ı kullanılır.
+
+    <label for="tarih">Tarih Seçiniz</label>
+        <input type="date" name="tarih">
+    
+    16. Tarih ve saat belirlemek için datetime-local özelliği kullanılır.
+    
+     <label for="tarih2">Tarih Ve Saat Seçiniz</label>
+        <input type="datetime-local" name="tarih2">
+    
+    17. Sadece ay ve yıl seçmek için month kullanılır.    
+
+    18. Bir renk seçmek istersek color type'ı kullanılır.
+
+    <label for="renk">Renk Seçiniz</label>
+        <input type="color" name="renk">
+
+    19. range ile belli bir aralıktaki sayıdan seçim yaptırılabilir. 
+    
+     <label for="sayı2">Sayı Seçiniz</label>
+        0<input type="range" name="sayı2" min="0" max="100">100
+
+    20. url
+        Bir giriş alanı bir URL bağlantısı içerecekse kullanılır.
+
+        bu özellik, form gönderildiği sırada doğrulanır.
+    
+        <label for="homepage">Ana sayfanızı ekleyin:</label>
+        <input type="url" name="homepage">
+    
+
+    21. bir yılı ve haftayı seçmek istersek week kullanılır.
+
+    <label for="week">Haftayı ve Yılı Giriniz</label>
+        <input type="week" name="week">
+
+    22. Şimdi bütün form ögelerine baktık kullanıcıdan dataları aldık. Peki bunları bir yere yönlendirmek bir yere kaydetmek için ne yapmak gerek tabii ki göndermek gerekir. Bunun içinde bize bir buton ögesi gerecek.
+
+    submit type ı bir buton gibi gözükecektir.
+
+     <input type="submit" name="gönder" value="Gönder">
+
+        <input type="button" name="gönder" value="Gönder">
+-->
